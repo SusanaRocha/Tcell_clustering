@@ -17,10 +17,10 @@ This document contains MATLAB code for:
 - Localizations are plotted with a scale bar of 5 µm. LUT scale of these images can be adjusted in the script.<br></li>
 <li>	Then, two movies with the same core name (coming from the same cell), are combined into one dataset by combining the pts variables of both movies. </li></ul>
 <h3>Output</h3>
-<ul><li>	For each .HIS file: Matlab data file called _LocRes.mat containing the pts variable of that .HIS file. Example: 20240801_C3 control_02_mov1_LocRes and 20240801_C3 control_02_mov2_LocRes</li>
-<li>	For each .HIS file: PNG file with the plotted reconstructed image with scalebar 5 µm. Example: 20240801_C3 control_02_mov1 and 20240801_C3 control_02_mov2</li>
-<li>	For each .HIS file with the same core name: combined Matlab data file called _Res_all_movies containing the pts variable of those .HIS files. Example: 20240801_C3 control_02_Res_all_movies</li>
-<li>	For each .HIS file with the same core name: combined PNG file with filename ending in “all” with the plotted reconstructed image with scalebar 5 µm. Example: 20240801_C3 control_02all</li></ul>
+<ul><li>	For each .HIS file: Matlab data file called _LocRes.mat containing the pts variable of that .HIS file. <br>Example: 20240801_C3 control_02_mov1_LocRes and 20240801_C3 control_02_mov2_LocRes</li>
+<li>	For each .HIS file: PNG file with the plotted reconstructed image with scalebar 5 µm. <br>Example: 20240801_C3 control_02_mov1 and 20240801_C3 control_02_mov2</li>
+<li>	For each .HIS file with the same core name: combined Matlab data file called _Res_all_movies containing the pts variable of those .HIS files. <br>Example: 20240801_C3 control_02_Res_all_movies</li>
+<li>	For each .HIS file with the same core name: combined PNG file with filename ending in “all” with the plotted reconstructed image with scalebar 5 µm. <br>Example: 20240801_C3 control_02all</li></ul>
 
 <h2>MATLAB_CODE_Voronoi_analysis</h2>
 <h3>Input</h3>
