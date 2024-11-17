@@ -5,10 +5,10 @@ This document contains MATLAB code for:
 *	Partitioning localizations into Voronoi areas and calculating certain cluster properties
 <h2>MATLAB_CODE_Localizations_bulk</h2>
 <h3>Input</h3><p>
--	'.HIS' files from single-molecule dSTORM-TIRF experiment. For one cell, two movies of each 5000 frames are imaged. The two movies have to have the same core name, followed by _mov1 or _mov2 for the analysis to work. Example: <br>
+<ul>	'.HIS' files from single-molecule dSTORM-TIRF experiment. For one cell, two movies of each 5000 frames are imaged. The two movies have to have the same core name, followed by _mov1 or _mov2 for the analysis to work. Example: <br>
 20240801_C3 control_02_mov1.HIS <br>
 20240801_C3 control_02_mov2.HIS (core name = 20240801_C3 control_02) - data can be supplied upon request <br>
--	Localizer function (Dedecker et al. doi:10.1117/1.JBO.17.12. For download and installation, see: https://bitbucket.org/pdedecker/localizer/src/master/ )</p>
+-	Localizer function (Dedecker et al. doi:10.1117/1.JBO.17.12. For download and installation, see: https://bitbucket.org/pdedecker/localizer/src/master/ )</ul></p>
 <h3>Important code aspects</h3><br>
 -	Bulk analysis for .HIS files <br>
 -	First individual .HIS files are analyzed: <br>
