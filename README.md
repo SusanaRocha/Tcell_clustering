@@ -10,16 +10,16 @@ This document contains MATLAB code for:
 - 20240801_C3 control_02_mov2.HIS (core name = 20240801_C3 control_02) - data can be supplied upon request <br>
 <li>	Localizer function (Dedecker et al. doi:10.1117/1.JBO.17.12. For download and installation, see: https://bitbucket.org/pdedecker/localizer/src/master/ )</li></ul>
 <h3>Important code aspects</h3><br>
--	Bulk analysis for .HIS files <br>
--	First individual .HIS files are analyzed: <br>
-Localizations are retrieved by using the Localizer function that fits a 2D Gaussian with PSF standard deviation factor 1.8 and intensity selection sigma factor 25. Localizations are saved in the variable pts: a table with 12 columns (see explanation Localizer function) where each row represents 1 localization.<br>
- Localizations are plotted with a scale bar of 5 µm. LUT scale of these images can be adjusted in the script.<br>
--	Then, two movies with the same core name (coming from the same cell), are combined into one dataset by combining the pts variables of both movies.
+<ul><li>	Bulk analysis for .HIS files </li>
+<li>	First individual .HIS files are analyzed: <br>
+- Localizations are retrieved by using the Localizer function that fits a 2D Gaussian with PSF standard deviation factor 1.8 and intensity selection sigma factor 25. Localizations are saved in the variable pts: a table with 12 columns (see explanation - Localizer function) where each row represents 1 localization.<br>
+- Localizations are plotted with a scale bar of 5 µm. LUT scale of these images can be adjusted in the script.<br></li>
+<li>	Then, two movies with the same core name (coming from the same cell), are combined into one dataset by combining the pts variables of both movies. </li></ul>
 <h3>Output</h3><br>
--	For each .HIS file: Matlab data file called _LocRes.mat containing the pts variable of that .HIS file. Example: 20240801_C3 control_02_mov1_LocRes and 20240801_C3 control_02_mov2_LocRes
--	For each .HIS file: PNG file with the plotted reconstructed image with scalebar 5 µm. Example: 20240801_C3 control_02_mov1 and 20240801_C3 control_02_mov2
--	For each .HIS file with the same core name: combined Matlab data file called _Res_all_movies containing the pts variable of those .HIS files. Example: 20240801_C3 control_02_Res_all_movies
--	For each .HIS file with the same core name: combined PNG file with filename ending in “all” with the plotted reconstructed image with scalebar 5 µm. Example: 20240801_C3 control_02all
+<ul><li>	For each .HIS file: Matlab data file called _LocRes.mat containing the pts variable of that .HIS file. Example: 20240801_C3 control_02_mov1_LocRes and 20240801_C3 control_02_mov2_LocRes</li>
+<li>	For each .HIS file: PNG file with the plotted reconstructed image with scalebar 5 µm. Example: 20240801_C3 control_02_mov1 and 20240801_C3 control_02_mov2</li>
+<li>	For each .HIS file with the same core name: combined Matlab data file called _Res_all_movies containing the pts variable of those .HIS files. Example: 20240801_C3 control_02_Res_all_movies</li>
+<li>	For each .HIS file with the same core name: combined PNG file with filename ending in “all” with the plotted reconstructed image with scalebar 5 µm. Example: 20240801_C3 control_02all</li></ul>
 
 MATLAB_CODE_Voronoi_analysis
 Input
